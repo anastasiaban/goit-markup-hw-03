@@ -100,9 +100,7 @@ color: var(--aacent-color);
     
 }
 .hero-title {
-    margin: 0;
-    padding: 0;
-   outline: 2px solid aqua;
+   outline: 2;
 font-weight: 700;
 font-size: 56px;
 line-height: 1.07;
