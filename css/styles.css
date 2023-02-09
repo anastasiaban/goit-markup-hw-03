@@ -132,7 +132,7 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 
-margin-top: 0;
+margin-top: 32px;
 margin-bottom: 8px;
 }
 .features-list .part,
@@ -143,8 +143,9 @@ letter-spacing: 0.02em;
     color: var(--title-text-color);
 
     margin-top: 0;
-    margin-bottom: 0;
-    
+    margin-bottom: 32px;
+   
+   
 }
 
 .functions { 
@@ -247,6 +248,9 @@ margin-bottom: 188px;
         color: var(--aacent-color);
         background: var(--logo-seclast-color);
         cursor: pointer;
+text-align: center;
+
+        padding: 12px 24px;
 }
 .button-main:hover,
 .button-main:focus {
@@ -276,4 +280,12 @@ margin-bottom: 188px;
     width: 1158px;
     outline: 2px solid tomato;
 }
+/*portf*/
+.but-portf {
+    padding-top: 96px;
+    margin-bottom: 72px;
+    outline: 2px solid tomato;
+}
+ 
+
 
