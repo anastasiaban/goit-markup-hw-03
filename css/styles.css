@@ -70,6 +70,7 @@ color: var(--aacent-color);
 /*------------header--------------------*/
 .page-header {
     background-color: #ccc;
+    
 }
 .site-nav .link {
     font-weight: 500;
@@ -97,7 +98,13 @@ color: var(--aacent-color);
 /*------------studio-------------------*/
 .hero {
     background-color: var(--primary-text-color);
-    
+    text-align: center;
+    outline: 2px solid green;
+ margin-bottom: 120px;
+    height: 600px;
+    margin-left: auto;
+margin-right: auto;
+
 }
 .hero-title {
    outline: 2;
@@ -106,10 +113,17 @@ font-size: 56px;
 line-height: 1.07;
 letter-spacing: 0.02em;
 color: var(--order-button-color);
+
+padding: 0;
+padding-top: 188px;
+margin-top: 0;
+margin-bottom: 48px;
 }
 
 /*преимущества*/
-
+.features {
+    margin-bottom: 120px;
+}
 .features-list .title,
  .services h3 {
     color: var(--primary-text-color);
@@ -117,6 +131,9 @@ font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
+
+margin-top: 0;
+margin-bottom: 8px;
 }
 .features-list .part,
 .services p {
@@ -124,17 +141,33 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
     color: var(--title-text-color);
+
+    margin-top: 0;
+    margin-bottom: 0;
+    
 }
 
+.functions { 
+   outline: 2px solid purple;
+   margin-bottom: 120px;
+   margin-top: 0;
+}
 .functions-title {
 font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
+text-align: center;
+
+margin-top: 0; 
+margin-bottom: 72px;
 }
 .team {
     background-color: var(--logo-seclast-color);
+    margin-bottom: 0;
+    outline: 2px solid yellow;
+
 }
 
 .team-title {
@@ -143,18 +176,34 @@ font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 72px;
+    padding-top: 120px;
+}
+.team-cards {
+    padding-bottom: 120px;
 }
 .team-name {
     font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
+
+        margin-bottom: 8px;
+        margin-top: 32px;
 }
+
 .team-prof {
     font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #434455;
+        color: #434455; 
+
+        margin-top: 0;
+        margin-bottom: 32px;
+        
 }
 
 
@@ -171,6 +220,7 @@ cursor: pointer;
 
 border-radius: 4px;
 padding: 16px 32px;
+margin-bottom: 188px;
 }
 .button:hover,
 .button:focus {
@@ -209,6 +259,13 @@ padding: 16px 32px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--footer-text-color);
+
+        margin-bottom: 0;
+        padding-bottom: 100px;
+}
+.logo-footer {
+    padding-top: 100px;
+    margin-bottom: 16px;
 }
 .foot {
     background: var(--primary-text-color);
