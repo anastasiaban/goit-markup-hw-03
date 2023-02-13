@@ -47,6 +47,7 @@ line-height: 1.33;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--aacent-color);
+display: block;
 }
 .logo-frst {
     color: var(--primary-text-color);
@@ -70,8 +71,13 @@ color: var(--aacent-color);
 /*------------header--------------------*/
 .page-header {
     background-color: #ccc;
-    
 }
+.main-header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
 .site-nav {
 display: flex;
 }
@@ -105,7 +111,7 @@ display: flex;
     display: flex;
 }
 
-.inf-nav .nav-link + .nav-link {
+.inf-nav .inf-list + .inf-list {
     margin-left: 40px;
 }
 
