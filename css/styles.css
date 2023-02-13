@@ -77,9 +77,15 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 }
+.navigation  {
+    display: flex;
+    align-items: center;
+    
+}
 
 .site-nav {
 display: flex;
+margin-left: 76px;
 }
 
 .site-nav .link {
@@ -109,6 +115,7 @@ display: flex;
 
 .inf-nav {
     display: flex;
+    margin-left: auto;
 }
 
 .inf-nav .inf-list + .inf-list {
@@ -136,6 +143,7 @@ display: flex;
  margin-bottom: 120px;
     margin-left: auto;
 margin-right: auto;
+padding-top: 188px;
 
 }
 .hero-title {
@@ -147,14 +155,25 @@ letter-spacing: 0.02em;
 color: var(--order-button-color);
 
 padding-bottom: 0;
-padding-top: 188px;
+
 margin-top: 0;
 margin-bottom: 48px;
+margin-left: auto;
+margin-right: auto;
+
+width: 496px;
+height: 120px;
+
+text-align: center;
 }
 
 /*преимущества*/
 .features {
     margin-bottom: 120px;
+    
+}
+.features-list {
+    display: flex;
 }
 .features-list .title,
  .services h3 {
@@ -180,12 +199,28 @@ letter-spacing: 0.02em;
    
    
 }
-
+.features .features-item+.features-item {
+    margin-left: 24px;
+}
+.features-item:last-child {
+    margin-right: 0;
+}
 .functions { 
    outline: 2px solid purple;
    margin-bottom: 120px;
    margin-top: 0;
 }
+
+.functions-list {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 24px;
+}
+
+.functions-list:last-child {
+    margin-right: 0;
+}
+
 .functions-title {
 font-weight: 700;
 font-size: 36px;
@@ -218,7 +253,15 @@ font-weight: 700;
 }
 .team-cards {
     padding-bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 24px;
 }
+
+.team-cards:last-child {
+    margin-right: 0;
+}
+
 .team-name {
     font-weight: 500;
         font-size: 20px;
@@ -227,6 +270,7 @@ font-weight: 700;
 
         margin-bottom: 8px;
         margin-top: 32px;
+        text-align: center;
 }
 
 .team-prof {
@@ -237,6 +281,7 @@ font-weight: 700;
 
         margin-top: 0;
         margin-bottom: 32px;
+        text-align: center;
         
 }
 
@@ -281,10 +326,10 @@ margin-bottom: 188px;
         color: var(--aacent-color);
         background: var(--logo-seclast-color);
         cursor: pointer;
-text-align: center;
-
-        padding: 12px 24px;
+        text-align: center;
+        padding: 12px 24px;  
 }
+
 .button-main:hover,
 .button-main:focus {
     color: var(--order-button-color);
@@ -311,16 +356,37 @@ text-align: center;
     margin-left: auto;
     margin-right: auto;
     width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
     outline: 2px solid tomato;
+
 }
 /*portf*/
 .but-portf {
     padding-top: 96px;
     margin-bottom: 72px;
     outline: 2px solid tomato;
+
+    display: flex;
+    background-color: tomato;
 }
  .services {
     margin-bottom: 120px;
  }
 
+ .services-list {
+    display: flex;
+    flex-wrap: wrap;
+  
+    background-color: yellowgreen;
+ }
 
+ .services .services-item {
+    width: 360px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+ }
+ 
+.services .services-item:nth-child(3n) {
+    
+}
