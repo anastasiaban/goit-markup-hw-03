@@ -70,12 +70,13 @@ display: block;
 }
 /*------------header--------------------*/
 .page-header {
-    background-color: #ccc;
+border-bottom: 1px solid #E7E9FC;
 }
 .main-header {
 display: flex;
 align-items: center;
 justify-content: space-between;
+
 }
 .navigation  {
     display: flex;
@@ -139,7 +140,7 @@ margin-left: 76px;
 .hero {
     background-color: var(--primary-text-color);
     text-align: center;
-    outline: 2px solid green;
+    
  margin-bottom: 120px;
     margin-left: auto;
 margin-right: auto;
@@ -183,7 +184,6 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 
-margin-top: 32px;
 margin-bottom: 8px;
 }
 .features-list .part,
@@ -206,7 +206,7 @@ letter-spacing: 0.02em;
     margin-right: 0;
 }
 .functions { 
-   outline: 2px solid purple;
+  
    margin-bottom: 120px;
    margin-top: 0;
 }
@@ -235,7 +235,7 @@ margin-bottom: 72px;
 .team {
     background-color: var(--logo-seclast-color);
     margin-bottom: 0;
-    outline: 2px solid yellow;
+   
 
 }
 
@@ -328,6 +328,9 @@ margin-bottom: 188px;
         cursor: pointer;
         text-align: center;
         padding: 12px 24px;  
+
+         border: 1px solid #E7E9FC;
+border-radius: 4px;
 }
 
 .button-main:hover,
@@ -342,8 +345,11 @@ margin-bottom: 188px;
         letter-spacing: 0.02em;
         color: var(--footer-text-color);
 
-        margin-bottom: 0;
+       margin-bottom: 0;
         padding-bottom: 100px;
+
+        width: 264px;
+        height: 72px;
 }
 .logo-footer {
     padding-top: 100px;
@@ -351,6 +357,7 @@ margin-bottom: 188px;
 }
 .foot {
     background: var(--primary-text-color);
+    
 }
 .container {
     margin-left: auto;
@@ -358,35 +365,43 @@ margin-bottom: 188px;
     width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid tomato;
+   justify-content: space-between;
 
 }
 /*portf*/
 .but-portf {
-    padding-top: 96px;
-    margin-bottom: 72px;
-    outline: 2px solid tomato;
-
+   
     display: flex;
-    background-color: tomato;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
+    gap: 24px;
+
+
 }
+
  .services {
     margin-bottom: 120px;
+    padding-top: 96px;
  }
 
  .services-list {
     display: flex;
     flex-wrap: wrap;
-  
-    background-color: yellowgreen;
  }
 
- .services .services-item {
-    width: 360px;
-    margin-right: 24px;
-    margin-bottom: 24px;
+ .services-item:nth-child(3n) {
+  margin-right: 0;
  }
  
-.services .services-item:nth-child(3n) {
-    
+.services-item-wrap {
+padding-top: 32px;
+padding-bottom: 32px;
+}
+
+.services-item-box {
+    position: relative;
+    min-width: 360px;
+    min-height: 300px;
 }
