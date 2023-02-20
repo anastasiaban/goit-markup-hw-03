@@ -184,11 +184,11 @@ font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
+
+margin-top: 0;
+margin-bottom: 8px;
 }
 
-.features-list .title {
-    margin-bottom: 8px;
-}
 
 .features-list .part,
 .services p {
@@ -218,8 +218,11 @@ letter-spacing: 0.02em;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-right: 24px;
-    margin-top: calc(-1 * 24px);
+}
+
+.functions-list+.functions-list {
+margin-right: 24px;
+    margin-top: 24px;
 }
 
 .functions-list:last-child {
@@ -271,8 +274,8 @@ font-weight: 700;
 .team-cards {
    display: flex;
     justify-content: space-between;
-    margin-left: calc(-1 * 24px);
-    margin-top: calc(-1 * 48px);
+    margin-left: 24px;
+    margin-top: 48px;
 }
 
 .cards {
@@ -380,9 +383,8 @@ border-radius: 4px;
         color: var(--footer-text-color);
 
        margin-bottom: 0;
- margin-top: 16;
-
-        width: 264px;
+       margin-top: 16;
+       width: 264px;
        
 }
 .logo-footer {
@@ -418,14 +420,13 @@ border-radius: 4px;
 }
 
  .services {
-    margin-bottom: 120px;
     padding-top: 96px;
+    padding-bottom: 120px;
  }
 
  .services-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin-left: calc(-1 * 24px);
     margin-top: calc(-1 * 48px);
  }
@@ -434,19 +435,17 @@ border-radius: 4px;
     flex-basis: calc(100% / 3 - 24px);
     margin-left: 24px;
     margin-top: 48px;
-    box-shadow: 0px 1px 6px rgb(46 47 66 / 8%);
-    border-radius: 0 0 4px 4px;
  }
 
- 
- 
-.services-item-wrap {
-border-radius: 0px 0px 4px 4px;
+ .services-item-wrap {
+    border: 1px solid var(--footer-text-color);
+    border-top: hidden;
     padding: 32px 16px;
-}
+ }
 
-.services-item-box {
-    position: relative;
-    min-width: 360px;
-    min-height: 300px;
-}
+ .services-item img {
+     display: block;
+     max-width: 100%;
+     height: auto;
+ }
+ 
